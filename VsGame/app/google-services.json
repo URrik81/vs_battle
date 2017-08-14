@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "1041139931375",
+    "project_id": "firebase-vsgame"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041139931375:android:afd20b64f1df1876",
+        "android_client_info": {
+          "package_name": "vsgame.threelm.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1041139931375-oeesj0arpiruc4qrlkjv24vnt7ljjsra.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vsgame.threelm.com",
+            "certificate_hash": "BEF297A27BB34BAFC22D88C694E07AC3DDDA786C"
+          }
+        },
+        {
+          "client_id": "1041139931375-r68omcstu77oo6pb96grj2esrtnl8a93.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041139931375:android:47ade1617ee82025",
+        "android_client_info": {
+          "package_name": "com.threelm.vsgame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1041139931375-ni3gh8set15usl5fkfiujsnvk2hii7tk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.threelm.vsgame",
+            "certificate_hash": "D11C43694240158AD01A5549EDE553AC77C59041"
+          }
+        },
+        {
+          "client_id": "1041139931375-r68omcstu77oo6pb96grj2esrtnl8a93.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk3VjyKOk4NY00FgnfnI3qhy_KxNKifko"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
