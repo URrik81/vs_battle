@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        releasekeystore {
+            keyAlias 'VsGameKey'
+            keyPassword 'Saarem01'
+            storeFile file('C:/_TMP/android/release/vsgamekey.jks')
+            storePassword 'Barabuka01'
+        }
+        debug {
+            keyAlias 'androiddebugkey'
+            storeFile file('C:/Users/yurmor/.android/debug.keystore')
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId 'com.threelm.vsgame'
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        signingConfig signingConfigs.debug
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.releasekeystore
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    //Google API
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.google.android.gms:play-services-auth:9.2.1'
+}
