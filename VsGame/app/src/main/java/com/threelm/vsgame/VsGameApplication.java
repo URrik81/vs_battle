@@ -1,6 +1,7 @@
 package com.threelm.vsgame;
 
 import android.app.Application;
+import android.content.Context;
 
 import com.threelm.vsgame.modules.battle.BattleModule;
 
@@ -27,5 +28,11 @@ public class VsGameApplication extends Application {
     @Override
     public void onTerminate() {
         super.onTerminate();
+    }
+
+    public static VsGameComponent getVsGameComponent(Context context) {
+        VsGameApplication vsGameApplication = (VsGameApplication) context.getApplicationContext();
+        vsGameApplication.initComponent();
+        return vsGameApplication.vsGameComponent;
     }
 }

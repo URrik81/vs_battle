@@ -16,6 +16,6 @@ import dagger.Component;
 })
 
 @Singleton
-interface VsGameComponent {
+public interface VsGameComponent {
     void inject(BattlesActivity activity);
 }
