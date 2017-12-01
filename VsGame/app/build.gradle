@@ -11,7 +11,7 @@ android {
         }
         debug {
             keyAlias 'androiddebugkey'
-            storeFile file('C:/Users/yurmor/.android/debug.keystore')
+            storeFile file('C:/Users/ymorugov/.android/debug.keystore')
         }
     }
     compileSdkVersion 25
@@ -55,4 +55,6 @@ dependencies {
     //Retrofit
     compile 'com.squareup.retrofit2:retrofit:2.0.2'
     compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    //HtmlCleaner
+    compile 'net.sourceforge.htmlcleaner:htmlcleaner:2.21'
 }

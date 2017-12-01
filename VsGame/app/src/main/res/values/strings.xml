@@ -16,4 +16,7 @@
         completions."
     </string>
     <string name="action_go_offline">Go Offline</string>
+
+    <!-- URL strings -->
+    <string name="login_parameters">username=%1$s&amp;password=%2$s&amp;login=Вход&amp;redirect=./index.php?</string>
 </resources>
