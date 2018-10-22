@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.threelm.vsgame.R;
 
@@ -15,7 +14,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
-
+//TODO page parcer is needed
 public class VsForumService extends Service{
 
     private static final String TAG = VsForumService.class.getSimpleName();

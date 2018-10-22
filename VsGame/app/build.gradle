@@ -1,12 +1,11 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.neenbedankt.android-apt'
 
 android {
     signingConfigs {
         releasekeystore {
             keyAlias 'VsGameKey'
             keyPassword 'Saarem01'
-            storeFile file('C:/_TMP/android/release/vsgamekey.jks')
+            storeFile file('D:/_TMP/android/release/vsgamekey.jks')
             storePassword 'Barabuka01'
         }
         debug {
@@ -14,12 +13,12 @@ android {
             storeFile file('C:/Users/ymorugov/.android/debug.keystore')
         }
     }
-    compileSdkVersion 25
-    buildToolsVersion '25.0.3'
+    compileSdkVersion 27
+    buildToolsVersion '28.0.2'
     defaultConfig {
         applicationId 'com.threelm.vsgame'
-        minSdkVersion 15
-        targetSdkVersion 23
+        minSdkVersion 21
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         signingConfig signingConfigs.debug
@@ -42,15 +41,15 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     //Google API
-    compile 'com.android.support:support-annotations:25.3.1'
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:support-annotations:28.0.0'
+    compile 'com.android.support:appcompat-v7:27.1.1'
+    compile 'com.android.support:design:27.1.1'
     compile 'com.google.android.gms:play-services-auth:11.0.0'
     //ButterKnife
     compile 'com.jakewharton:butterknife:7.0.1'
     //Dagger2
-    compile 'com.google.dagger:dagger:2.0.2'
-    apt 'com.google.dagger:dagger-compiler:2.0.2'
+    compile 'com.google.dagger:dagger:2.16'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.16'
     provided 'org.glassfish:javax.annotation:10.0-b28'
     //Retrofit
     compile 'com.squareup.retrofit2:retrofit:2.0.2'
