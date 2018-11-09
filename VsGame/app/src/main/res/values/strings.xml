@@ -19,4 +19,24 @@
 
     <!-- URL strings -->
     <string name="login_parameters">username=%1$s&amp;password=%2$s&amp;login=Вход&amp;redirect=./index.php?</string>
+
+    <!-- Select Armies-->
+    <string name="quick_battle">Quick battle (3 vs 3)</string>
+    <string name="your_side">Your side</string>
+    <string name="enemy_side">Enemy side</string>
+    <string name="one_low">[-]</string>
+    <string name="two_low">[-][-]</string>
+    <string name="three_low">[-][-][-]</string>
+    <string name="four_low">[-][-][-][-]</string>
+    <string name="one_normal">[ ]</string>
+    <string name="two_normal">[ ][ ]</string>
+    <string name="three_normal">[ ][ ][ ]</string>
+    <string name="four_normal">[ ][ ][ ][ ]</string>
+    <string name="one_high">[+]</string>
+    <string name="two_high">[+][+]</string>
+    <string name="three_high">[+][+][+]</string>
+    <string name="four_high">[+][+][+][+]</string>
+
+
+
 </resources>
