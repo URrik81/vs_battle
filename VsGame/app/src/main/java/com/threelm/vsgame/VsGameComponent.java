@@ -6,6 +6,7 @@ package com.threelm.vsgame;
 
 import com.threelm.vsgame.modules.battle.BattleModule;
 import com.threelm.vsgame.modules.battle.ui.BattlesActivity;
+import com.threelm.vsgame.modules.battle.ui.SelectArmiesFragment;
 
 import javax.inject.Singleton;
 
@@ -18,4 +19,6 @@ import dagger.Component;
 @Singleton
 public interface VsGameComponent {
     void inject(BattlesActivity activity);
+
+    void inject(SelectArmiesFragment fragment);
 }

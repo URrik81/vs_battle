@@ -2,8 +2,10 @@ package com.threelm.vsgame;
 
 import android.app.Application;
 import android.content.Context;
+import android.content.Intent;
 
 import com.threelm.vsgame.modules.battle.BattleModule;
+import com.threelm.vsgame.services.FireBaseRepositoryService;
 
 /**
  * Created by yurmor on 14.08.2017.
@@ -15,6 +17,14 @@ public class VsGameApplication extends Application {
 
     @Override
     public void onCreate() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent=new Intent(getApplicationContext(), FireBaseRepositoryService.class);
+                startService(intent);
+
+            }
+        }).start();
         initComponent();
         super.onCreate();
     }

@@ -15,7 +15,7 @@ buildscript {
         // in the individual module build.gradle files
 
         //Google API
-        classpath 'com.google.gms:google-services:3.0.0'
+        classpath 'com.google.gms:google-services:4.0.1'
     }
 }
 

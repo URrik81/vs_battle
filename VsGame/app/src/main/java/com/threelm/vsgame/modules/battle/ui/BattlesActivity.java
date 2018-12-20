@@ -2,6 +2,8 @@ package com.threelm.vsgame.modules.battle.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
 import com.threelm.vsgame.R;
@@ -18,6 +20,8 @@ implements BattlesActivityView {
     @Inject
     BattlesActivityPresenter battlesActivityPresenter;
 
+    Fragment startedFragment;
+
     private VsForumService vsForumService;
 
     @Override
@@ -26,7 +30,32 @@ implements BattlesActivityView {
         VsGameApplication.getVsGameComponent(this).inject(this);
         setContentView(R.layout.activity_battles);
 
-        startService(new Intent(this, VsForumService.class));
+        battlesActivityPresenter.setView(this);
 
+        //Starts from select battle fragment
+        if (startedFragment == null) {
+            startedFragment = new SelectArmiesFragment();
+        }
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.add(R.id.fragment_container, startedFragment, SelectArmiesFragment.TAG).addToBackStack(SelectArmiesFragment.TAG).commit();
+
+        //Start service for forum
+        //startService(new Intent(this, VsForumService.class));
+
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
     }
 }

@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
+    /*signingConfigs {
         releasekeystore {
             keyAlias 'VsGameKey'
             keyPassword 'Saarem01'
@@ -12,7 +12,7 @@ android {
             keyAlias 'androiddebugkey'
             storeFile file('C:/Users/ymorugov/.android/debug.keystore')
         }
-    }
+    }//*/
     compileSdkVersion 27
     buildToolsVersion '28.0.2'
     defaultConfig {
@@ -27,10 +27,10 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.releasekeystore
+            //signingConfig signingConfigs.releasekeystore
         }
         debug {
-            signingConfig signingConfigs.debug
+            //signingConfig signingConfigs.debug
         }
     }
     productFlavors {
@@ -45,6 +45,8 @@ dependencies {
     compile 'com.android.support:appcompat-v7:27.1.1'
     compile 'com.android.support:design:27.1.1'
     compile 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+    implementation 'com.google.firebase:firebase-firestore:17.1.4'
     //ButterKnife
     compile 'com.jakewharton:butterknife:7.0.1'
     annotationProcessor 'com.jakewharton:butterknife:7.0.1'
@@ -58,3 +60,5 @@ dependencies {
     //HtmlCleaner
     compile 'net.sourceforge.htmlcleaner:htmlcleaner:2.21'
 }
+
+apply plugin: 'com.google.gms.google-services'
