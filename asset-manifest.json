@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/vs-battle/static/css/main.073c9b0a.css",
-    "main.js": "/vs-battle/static/js/main.a790ff4c.js",
-    "static/js/787.55d32e45.chunk.js": "/vs-battle/static/js/787.55d32e45.chunk.js",
-    "static/media/logo.svg": "/vs-battle/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/vs-battle/index.html",
-    "main.073c9b0a.css.map": "/vs-battle/static/css/main.073c9b0a.css.map",
-    "main.a790ff4c.js.map": "/vs-battle/static/js/main.a790ff4c.js.map",
-    "787.55d32e45.chunk.js.map": "/vs-battle/static/js/787.55d32e45.chunk.js.map"
+    "main.css": "/vs-battle/vs-tactics-ts/static/css/main.073c9b0a.css",
+    "main.js": "/vs-battle/vs-tactics-ts/static/js/main.f3803bfa.js",
+    "static/js/787.55d32e45.chunk.js": "/vs-battle/vs-tactics-ts/static/js/787.55d32e45.chunk.js",
+    "static/media/logo.svg": "/vs-battle/vs-tactics-ts/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/vs-battle/vs-tactics-ts/index.html",
+    "main.073c9b0a.css.map": "/vs-battle/vs-tactics-ts/static/css/main.073c9b0a.css.map",
+    "main.f3803bfa.js.map": "/vs-battle/vs-tactics-ts/static/js/main.f3803bfa.js.map",
+    "787.55d32e45.chunk.js.map": "/vs-battle/vs-tactics-ts/static/js/787.55d32e45.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.a790ff4c.js"
+    "static/js/main.f3803bfa.js"
   ]
 }
